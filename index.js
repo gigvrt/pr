@@ -68,17 +68,21 @@ console.log("label", profiler.getLabel())
 console.log("pushing directly")
 
 function coolUtil() {
-    if(Math.random() > Math.random()) {
-        return 'lucky + 2'
+    if(Math.random() < Math.random()) {
+        return 'lucky + 3'
     }
 
-    return "cooler + 1"
+    return "cooler - 1"
 }
 
 function superCooler() {
    if(Math.random() > Math.random()) {
         return 'lucky - 1'
     }
+  
+    return "super cool"
+}
 
-    return "super cool + 1"
+function addTopCooler() {
+    return "top cooler"
 }
