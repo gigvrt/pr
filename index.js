@@ -68,6 +68,10 @@ console.log("label", profiler.getLabel())
 console.log("pushing directly")
 
 function coolUtil() {
+    if(Math.random() > Math.random()) {
+        return 'lucky'
+    }
+
     return "cooler"
 }
 
