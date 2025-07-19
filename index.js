@@ -12,6 +12,10 @@ class Profiler {
         const diff = process.hrtime(this.lastTime);
         console.log(`Timer "${this.label}" took ${diff[0]} seconds and ${diff[1]} milliseconds`);
     }
+
+    getLabel() {
+        return this.label
+    }
 }
 
 
@@ -53,5 +57,7 @@ const evenNumbers = getAllEvenNums(num);
 profiler.end();
 
 console.log(evenNumbers)
+
+console.log("label", profiler.getLabel())
 
 console.log("pushing directly")
