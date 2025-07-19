@@ -19,6 +19,10 @@ class Profiler {
 
         console.log(`Timer "${this.label}" took ${seconds} seconds and ${milliseconds} milliseconds`);
     }
+
+    getLabel() {
+        return this.label
+    }
 }
 
 const noopProfiler = {
@@ -58,5 +62,7 @@ const evenNumbers = getAllEvenNums(num);
 profiler.end();
 
 console.log(evenNumbers)
+
+console.log("label", profiler.getLabel())
 
 console.log("pushing directly")
