@@ -80,5 +80,5 @@ function superCooler() {
         return 'lucky - 1'
     }
 
-    return "super cool"
+    return "super cool + 1"
 }
