@@ -45,8 +45,11 @@ function getAllEvenNums(intNum) {
 }
 
 const num = process.argv[2];
+
 const profiler = createProfiler(`Find all even number between 0 and ${num}`);
+
 profiler.start();
 const evenNumbers = getAllEvenNums(num);
 profiler.end();
+
 console.log(evenNumbers)
