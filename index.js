@@ -77,9 +77,9 @@ function coolUtil() {
 
 function superCooler() {
    if(Math.random() > Math.random()) {
-        return 'lucky'
+        return 'lucky - 1'
     }
-
+  
     return "super cool"
 }
 
