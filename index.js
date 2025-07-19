@@ -53,3 +53,5 @@ const evenNumbers = getAllEvenNums(num);
 profiler.end();
 
 console.log(evenNumbers)
+
+console.log("pushing directly")
