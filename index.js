@@ -66,3 +66,7 @@ console.log(evenNumbers)
 console.log("label", profiler.getLabel())
 
 console.log("pushing directly")
+
+function coolUtil() {
+    return "cooler"
+}
