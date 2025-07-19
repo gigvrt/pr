@@ -1,3 +1,7 @@
+function getEnv() {
+    return process.env.NODE_ENV
+}
+
 class Profiler {
     constructor(label) {
         this.label = label;
@@ -10,10 +14,12 @@ class Profiler {
 
     end() {
         const diff = process.hrtime(this.lastTime);
-        console.log(`Timer "${this.label}" took ${diff[0]} seconds and ${diff[1]} milliseconds`);
+        const seconds = diff[0];
+        const milliseconds = diff[1]
+
+        console.log(`Timer "${this.label}" took ${seconds} seconds and ${milliseconds} milliseconds`);
     }
 }
-
 
 const noopProfiler = {
     start() {
@@ -23,13 +29,12 @@ const noopProfiler = {
 };
 
 function createProfiler(label) {
-    if (process.env.NODE_ENV === "production") {
+    if (getEnv() === "production") {
         return noopProfiler;
     }
 
     return new Profiler(label);
 }
-
 
 function getAllEvenNums(intNum) {
     const evenNumbers = [];
