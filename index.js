@@ -70,3 +70,7 @@ console.log("pushing directly")
 function coolUtil() {
     return "cooler"
 }
+
+function superCooler() {
+    return "super cool"
+}
