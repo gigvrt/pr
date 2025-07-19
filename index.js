@@ -69,10 +69,10 @@ console.log("pushing directly")
 
 function coolUtil() {
     if(Math.random() < Math.random()) {
-        return 'lucky + 1'
+        return 'lucky + 3'
     }
 
-    return "cooler"
+    return "cooler - 1"
 }
 
 function superCooler() {
