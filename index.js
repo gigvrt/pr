@@ -86,3 +86,7 @@ function superCooler() {
 function addTopCooler() {
     return "top cooler"
 }
+
+function clear() {
+    return "top cooler"
+}
